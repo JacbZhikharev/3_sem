@@ -105,9 +105,9 @@ void * generate(void * d) {
 	for (j = 0; j < jmax ; j++) 
   {
 		x = (double)(rand_r(&seed)) / RAND_MAX;
-		x = x + 1;
+		x = 2 * x;
 		y = (double)(rand_r(&seed))/ RAND_MAX;
-		y = 3*y + 1;
+		y = 4*y;
 		y1 = x * x;
 		if (y <= y1) 
     {
