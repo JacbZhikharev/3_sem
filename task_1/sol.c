@@ -19,7 +19,7 @@ static void run_cmd(char *cmd)
         }
         char ** args;
         args=malloc(200*sizeof(char));        
-        char delim[]=" ,-\n";
+        char delim[]=" , \n";
         for (char *p= strtok(cmd,delim); p!=NULL; p = strtok(NULL, delim))
         {
         *(args+i)=p;
