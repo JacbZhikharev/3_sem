@@ -36,6 +36,6 @@ int main(){
 		exit(-1);
 	}
 	int status = shmctl(shmid, IPC_RMID, NULL);
-	printf("%f\n", (double)sum * 3  / N);
+	printf("%f\n", (double)sum * 8  / N);
 	return 0;
 }
