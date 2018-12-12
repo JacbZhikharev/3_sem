@@ -7,11 +7,11 @@
 #include <pthread.h>
 #include <time.h>
 
-int n; 
+int n=1; //число ядер
 #define N 100000000 
 int main(){
-	printf("STREAMS\n");
-	scanf("%d", &n);
+	//printf("STREAMS\n");
+	//scanf("%d", &n);
 
 	int * array;
 	int i;
