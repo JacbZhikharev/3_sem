@@ -12,7 +12,7 @@
 
 
 int *array;
-int n; 
+int n=1; //число ядер
 
 typedef struct {
 	int num;
@@ -25,8 +25,8 @@ void * generate(void * d);
 int main() {
 	
 	int i;
-	printf("STREAM\n");
-	scanf("%d", &n);
+	/*printf("STREAM\n");
+	scanf("%d", &n);*/
 	pthread_t *thread = (pthread_t *) malloc (n * sizeof(pthread_t));
 	srand(time(NULL));
 	input_t *t = (input_t *) malloc (n * sizeof(input_t));
