@@ -82,6 +82,7 @@ SearchDirectory (const char *name)
 	    }
 	}
     }
+  closedir(dir);
   return;
 }
 
